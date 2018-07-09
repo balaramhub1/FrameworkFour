@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="CRM Autoamtion-Regression">
+
+	<listeners>
+		<listener class-name="com.CRM.util.Transformer"></listener>
+		<listener class-name="com.CRM.util.TestListener"></listener>
+	</listeners>
+  <test name="CRM Test" >
+    <classes>
+       <class name="com.CRM.testcases.LoginPageTest" />
+       <class name="com.CRM.testcases.HomePageTest" />
+     <!-- <class name="com.CRM.testcases.ContactsPageTest" />  -->  
+    </classes>
+  </test>
+ 
+</suite>
